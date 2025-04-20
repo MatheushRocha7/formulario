@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="styles/stylesagendamento.css">
+ </head>
+ <body>
+     <h2>Formulario de Agendamento de Serviço - Barbearia</h2>
+     <form>
+         <div class="div-classes">
+             <label for="data_nascimento">Data para Agendamento:</label><br>
+             <input type="date" name="data_nascimento" required>
+         </div>
+ 
+         <label for="servico">Corte desejado:</label><br>
+         <select id="servico" name="servico" required>
+            <option value="">Selecione...</option>
+            <option value="corte">Corte de cabelo</option>
+            <option value="barba">Barba</option>
+            <option value="corte_barba">Corte + Barba</option>
+            <option value="sobrancelha">Design de sobrancelha</option>
+         </select>
+ 
+         <div class="div-classes">
+             <label for="servico">Tipo de cabelo:</label><br>
+         <select name="doenca">
+             <option value="">Selecione...</option>
+             <option value="Nefrite">Liso</option>
+             <option value="Conjutivite">Ondulado</option>
+             <option value="Renite">Cacheado</option>
+             <option value="Asma">Crespo</option>
+             <option value="Tendinite">Tendinite</option>
+         </select>
+         </div><br>
+ 
+         <label for="estilo">Qual estilo desejado de corte(ex: degradê, navalhado, barba lenhador):</label>
+         <p>Obs:Pode ser alterado ao chegar no local só confirme com o cabelereiro antes de realizar o corte!</p>
+         <input type="text" id="estilo" name="estilo"><br>
+ 
+         <label for="hora">Horário desejado:</label><br>
+         <input type="time" id="hora" name="hora" required><br>
+ 
+         <label for="observacoes">Observações adicionais:</label><br>
+         <textarea id="observacoes" name="observacoes" rows="4" placeholder="Ex: cabelo muito cheio, alergia a produtos, etc."></textarea><br>
+ 
+         <input type="submit" value="Agendar agora">
+     </form>
+ </body>
+ </html>
